@@ -67,7 +67,7 @@ export const ChatWindow = () => {
 
   return (
     <div
-      className="w-full max-w-lg p-6 sm:p-5 rounded-none sm:rounded-3xl flex flex-col overflow-hidden 
+      className="w-full max-w-lg p-6 sm:p-2 rounded-none sm:rounded-3xl flex flex-col overflow-hidden 
             bg-gradient-to-b from-primary to-blue-300  text-gray-900 shadow-shiny">
       <Header />
 
