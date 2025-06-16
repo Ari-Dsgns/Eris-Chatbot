@@ -32,11 +32,11 @@ module.exports =  {
         
         primary: "#00040E", //blu
         secondary: "#CBD5E1", //red
-        tertiary: "#FCA59B",
+        complementario: "#FACC15",
         textBackground: "#F0F0F0", 
         textBackground2: "#D2AAA5",
-        background: "#f3f4f6", 
-        text: "#111827", 
+        primaryButton: "#DB2777", 
+        complementary: "#F59E0B	", 
       },  
     },
   },

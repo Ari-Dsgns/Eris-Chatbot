@@ -4,10 +4,10 @@ import robot from '../assets/robot.svg'
 
 export const MessageBubble = ({ msg }) => (
   <div
-    className={`my-1 p-4 rounded-full max-w-[80%] w-auto ${
+    className={`my-1 p-4 rounded-full w-auto ${
       msg.from === 'bot'
         ? 'bg-slate-300 text-blue-950 self-start'
-        : 'bg-slate-400 text-white self-end'
+        : 'bg-slate-400 text-white self-end '
     }`}
   
   >

@@ -67,12 +67,12 @@ export const ChatWindow = () => {
 
   return (
     <div
-      className="w-full max-w-lg p-6 sm:p-2 rounded-none sm:rounded-3xl flex flex-col overflow-hidden 
+      className="w-full max-w-lg p-2 lg:p-3 xs:rounded-none sm:rounded-3xl  flex flex-col overflow-hidden 
             bg-gradient-to-b from-primary to-blue-300  text-gray-900 shadow-shiny">
       <Header />
 
       {mode === "faq" && (
-        <div className="flex gap-1 flex-col rounded-md p-2   ">
+        <div className="flex gap-1 flex-col rounded-md p-2 mb-2 ">
           <p className="text-white font-bold mb-4 ps-5">
             Preguntas frecuentes:
           </p>

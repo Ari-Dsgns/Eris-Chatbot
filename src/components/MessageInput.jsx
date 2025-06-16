@@ -13,7 +13,7 @@ export const MessageInput = ({ onSend }) => {
   return (
     <input
       type="text"
-      className="w-full p-3 rounded-3xl focus:outline-none mb-2 mt-2 focus:ring focus:ring-blue-300 text-black bg-zinc-100"
+      className="w-full p-3 rounded-3xl focus:outline-none mb-2 mt-2 focus:ring-2 focus:ring-complementary text-black bg-zinc-100"
       placeholder="Ej: ¿Cuándo empiezan los exámenes?"
       value={input}
       onChange={(e) => setInput(e.target.value)}
