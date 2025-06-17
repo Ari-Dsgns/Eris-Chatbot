@@ -66,21 +66,25 @@ export const ChatWindow = () => {
 
 
   return (
-    <div
-      className="w-full max-w-lg p-2 lg:p-3 xs:rounded-none sm:rounded-3xl  flex flex-col overflow-hidden 
-            bg-gradient-to-b from-primary to-blue-300  text-gray-900 shadow-shiny">
+    <main
+      role="main"
+      className="w-full max-w-lg p-2 lg:p-6 xs:rounded-none sm:rounded-3xl  flex flex-col overflow-hidden 
+      bg-gradient-to-b from-primary to-blue-300  text-gray-900 shadow-shiny"
+      aria-label="Ventana principal del chatbot"
+      >
       <Header />
 
       {mode === "faq" && (
-        <div className="flex gap-1 flex-col rounded-md p-2 mb-2 ">
-          <p className="text-white font-bold mb-4 ps-5">
+        <div className="flex gap-1 flex-col rounded-md  mb-2 ">
+          <h2 className="text-white font-bold mb-4 ps-5">
             Preguntas frecuentes:
-          </p>
+          </h2>
           {faqs.map((faq, index) => (
             <button
               onClick={() => handleFaqClick(faq)}
               key={index}
               className="mb-1 p-3  bg-slate-300 border-none text-gray-800 text-start rounded-full hover:bg-slate-400 hover:border-none "
+              aria-label={`Pregunta frecuente: ${faq}`}
             >
               {faq}
             </button>
@@ -89,7 +93,10 @@ export const ChatWindow = () => {
       )}
 
       {mode === "chat" && (
-        <div className="flex-1 rounded-md min-h-40 max-h-80 overflow-auto p-2 mb-2 ">
+        <div className="flex-1 rounded-md min-h-40 max-h-80 overflow-auto  mb-2 ">
+          <h2 className="text-white mt-4 font-bold ps-5 ">
+            Conversación iniciada
+          </h2>
           {messages.map((msg, idx) => (
             <MessageBubble key={idx} msg={msg} />
           ))}
@@ -98,12 +105,14 @@ export const ChatWindow = () => {
       )}
 
       <div className=" border-gray-200">
-        <p className="text-white mt-4 font-bold ps-5 ">O escribe tu consulta:</p>
+        <h2 className="text-white mt-4 font-bold ps-5 ">
+          Escribe tu consulta:
+        </h2>
         <MessageInput onSend={sendMessage} />
         <ResetButton onReset={resetChat} />
       </div>
       <Footer onHomeClick={handleHomeClick} onHelpClick={handleHelpClick}/>
-    </div>
+    </main>
   );
 };
 

@@ -13,7 +13,7 @@ export const MessageBubble = ({ msg }) => (
   >
     <div className="flex items-center gap-2">
     {msg.from === 'bot' && (
-      <img className='animate-bounce' src={robot} alt="" />
+      <img className='animate-bounce' src={robot} alt="Icono de mensaje del bot" />
     )}
     {msg.text}
     
