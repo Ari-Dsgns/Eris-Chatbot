@@ -38,19 +38,6 @@ npm install
 npm run dev
 
 
-///estructura del proyecto///
-src/
- ├── components/
- │   ├── ChatWindow.jsx
- │   ├── MessageBubble.jsx
- │   ├── MessageInput.jsx
- │   ├── ResetButton.jsx
- │   ├── Header.jsx
- │   └── Footer.jsx
- ├── BotLogic.js
- ├── App.jsx
- └── main.jsx
-
 
 ****Desarrollado por Ari Sanchez **** www.arisanpala.com
 
