@@ -31,12 +31,14 @@ module.exports =  {
       colors: {
         
         primary: "#00040E", //blu
-        secondary: "#CBD5E1", //red
-        complementario: "#FACC15",
-        textBackground: "#F0F0F0", 
-        textBackground2: "#D2AAA5",
-        primaryButton: "#DB2777", 
-        complementary: "#F59E0B	", 
+        secondary: "#8EC5FF", //red
+        backgrounds: "#CBD5E1", //light gray
+        buttons: "#DB2777", 
+        complementary: "#FACC15",
+        textBackground: "#CBD5E1",
+        textBackground2: "#A9B4C0",
+        text1:"F6F0F0", //white
+        text2: "#1E293B", //dark gray
       },  
     },
   },

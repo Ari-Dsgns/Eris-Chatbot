@@ -69,7 +69,7 @@ export const ChatWindow = () => {
     <main
       role="main"
       className="w-full max-w-lg p-2 lg:p-6 xs:rounded-none sm:rounded-3xl  flex flex-col overflow-hidden 
-      bg-gradient-to-b from-primary to-blue-300  text-gray-900 shadow-shiny"
+      bg-gradient-to-b from-primary to-secondary  text-gray-900 shadow-shiny"
       aria-label="Ventana principal del chatbot"
       >
       <Header />
