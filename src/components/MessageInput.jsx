@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const MessageInput = ({ onSend }) => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const handleKey = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       onSend(input);
-      setInput('');
+      setInput("");
     }
   };
 
@@ -23,4 +23,3 @@ export const MessageInput = ({ onSend }) => {
     />
   );
 };
-

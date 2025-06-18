@@ -33,12 +33,16 @@ module.exports =  {
         primary: "#00040E", //blu
         secondary: "#8EC5FF", //red
         backgrounds: "#CBD5E1", //light gray
-        buttons: "#DB2777", 
+        buttons:{
+          normal: '#BE185D',    // pink-700
+          hover: '#9D174D',     // pink-800
+          selected: '#831843',  // pink-900
+        }, 
         complementary: "#FACC15",
         textBackground: "#CBD5E1",
         textBackground2: "#A9B4C0",
-        text1:"F6F0F0", //white
-        text2: "#1E293B", //dark gray
+        text1:"#F8F5F5", //white
+        text2: "#100F0F", //dark gray
       },  
     },
   },

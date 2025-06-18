@@ -1,21 +1,20 @@
-Eris - Chatbot FAQ Universitario
+## Eris - Chatbot FAQ Universitario
 
 Eris es un chatbot diseñado para responder preguntas frecuentes de estudiantes universitarios. Con un diseño inspirado en el sistema solar, busca ofrecer una experiencia moderna, accesible y atractiva para jóvenes amantes de la tecnología.
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - JavaScript (ES6+)
 
-Concepto visual
+## Identidad visual
+- Paleta de colores y UI Kit disponibles en la presentación de Canva: (https://www.canva.com/design/DAGqgfFeEIE/Ig9oPM-rnQnSBh4hio-7tg/view).
 
-- Inspiración: El nombre Eris hace referencia al planeta enano descubierto en 2005, que motivó la reclasificación de Plutón. El diseño evoca el sistema solar de forma minimalista, con dinamismo y movimiento.
-- Colores: Gradiente de azul oscuro a azul claro, representando el espacio profundo y el cielo de la Tierra.
-- Tipografía: [Roboto](https://fonts.google.com/specimen/Roboto), sans-serif moderna y accesible.
+- Logotipo creado dinámicamente con React y Tailwind CSS (`src/components/LogoErisRotating.jsx`)
 
-Accesibilidad
+## Accesibilidad
 
 La aplicación cumple con estándares básicos de accesibilidad (WCAG 2.1 AA):
 - Colores con contraste adecuado.
@@ -23,18 +22,28 @@ La aplicación cumple con estándares básicos de accesibilidad (WCAG 2.1 AA):
 - Elementos interactivos accesibles (`<button>`, `aria-*`).
 - Compatible con lectores de pantalla.
 
-Cómo instalar y correr el proyecto
+## Demo online
 
-Clona el repositorio
+[Ver app en Vercel](https://eris-chatbot.vercel.app/)
 
+
+## Documentación de la propuesta
+
+Presentacion: (https://www.canva.com/design/DAGqgfFeEIE/Ig9oPM-rnQnSBh4hio-7tg/edit?utm_content=DAGqgfFeEIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
+
+## Cómo instalar y correr el proyecto
+
+//--Clona el repositorio--//
 
 git clone https://github.com/Ari-Dsgns/Eris-Chatbot.git
 cd eris-chatbot
 
-//instala las dependencias///
+//--instala las dependencias--//
 npm install
 
-//Pon el marcha el proyecto///
+//--Lanza la app en modo desarrollo--//
 npm run dev
 
 
