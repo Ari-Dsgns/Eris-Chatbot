@@ -15,8 +15,8 @@ export const MessageInput = ({ onSend }) => {
       type="text"
       role="textbox"
       aria-label="Campo para escribir tu consulta"
-      className="w-full p-4 rounded-full focus:outline-none mb-2 mt-2 ring-4 focus:ring-2 focus:ring-black text-black bg-zinc-100"
-      placeholder="Ej: ¿Cuándo empiezan los exámenes?"
+      className="w-full p-4 focus:outline-none mb-2 mt-2 ring-0 rounded-md focus:ring-1 focus:ring-black text-black bg-zinc-200  border-2 border-gray-500"
+      placeholder="Ej: Escribe tu consulta aquí..."
       value={input}
       onChange={(e) => setInput(e.target.value)}
       onKeyDown={handleKey}

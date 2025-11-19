@@ -27,11 +27,6 @@ La aplicación cumple con estándares básicos de accesibilidad (WCAG 2.1 AA):
 [Ver app en Vercel](https://eris-chatbot.vercel.app/)
 
 
-## Documentación de la propuesta
-
-Presentacion: (https://www.canva.com/design/DAGqgfFeEIE/Ig9oPM-rnQnSBh4hio-7tg/edit?utm_content=DAGqgfFeEIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
-
 
 ## Cómo instalar y correr el proyecto
 

@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Auto-Start Development Server",
+            "type": "shell", // Usar 'shell' es más fiable que 'npm'
+            "command": "npm run dev", // El comando para iniciar tu servidor Vite
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen" // Ejecutar al abrir la carpeta
+            }
+        }
+    ]
+}

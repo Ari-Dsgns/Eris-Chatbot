@@ -26,7 +26,10 @@ module.exports =  {
       
      
 
-      
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        stack: ["Stack Sans Notch", "sans-serif"],
+      },
       
       colors: {
         
@@ -34,7 +37,7 @@ module.exports =  {
         secondary: "#8EC5FF", //red
         backgrounds: "#CBD5E1", //light gray
         buttons:{
-          normal: '#BE185D',    // pink-700
+          normal: '#2D728F',    // pink-700
           hover: '#9D174D',     // pink-800
           selected: '#831843',  // pink-900
         }, 

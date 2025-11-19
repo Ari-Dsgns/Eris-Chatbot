@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { MessageBubble } from "./MessageBubble";
 import { MessageInput } from "./MessageInput";
-import { ResetButton } from "./ResetButton";
 import { getBotReply } from "../BotLogic";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -41,9 +40,7 @@ export const ChatWindow = () => {
     setMode("faq"); // Resetea al modo FAQ
   };
 
-  const handleHomeClick = () => {
-    resetChat();
-  };
+  
 
   const handleHelpClick = () => {
     alert(
@@ -58,22 +55,34 @@ export const ChatWindow = () => {
   return (
     <main
       role="main"
-      className="w-full max-w-lg p-2 lg:p-6 xs:rounded-none sm:rounded-3xl  flex flex-col overflow-hidden 
-      bg-gradient-to-b from-primary to-secondary  text-text1 shadow-shiny"
-      aria-label="Ventana principal del chatbot"
+      className="
+  w-full 
+  max-w-lg
+  h-[820px]      /* altura fija */
+  p-3 sm:p-4 md:p-5 lg:p-6
+               /* Móvil: ocupa el 100vh real */
+    max-h-screen
+    flex flex-col 
+    overflow-hidden
+  border-4 border-orange-600
+  rounded-2xl
+  bg-zinc-50 
+  text-text1 
+  shadow-lg
+"
     >
       <Header />
 
       {mode === "faq" && (
-        <div className="flex gap-1 flex-col rounded-md  mb-2 ">
-          <h2 className="text-text1 mb-4 ps-5">
-            Preguntas frecuentes:
+        <div className="flex-1 overflow-y-auto px-2 flex h-auto gap-1 flex-col mb-2 p-2 rounded-md bg-zinc-100 no-scrollbar ">
+          <h2 className="text-text2 mb-4 pl-2 font-semibold ">
+            FAQ
           </h2>
           {faqs.map((faq, index) => (
             <button
               onClick={() => handleFaqClick(faq)}
               key={index}
-              className="mb-1 p-3  bg-textBackground border-none text-text2 text-start rounded-full hover:bg-slate-400 hover:border-none "
+              className="mb-1 p-2 bg-zinc-100 text-text2 text-start hover:bg-zinc-200 font-normal"
               aria-label={`Pregunta frecuente: ${faq}`}
             >
               {faq}
@@ -83,8 +92,8 @@ export const ChatWindow = () => {
       )}
 
       {mode === "chat" && (
-        <div className="flex-1 rounded-md min-h-40 max-h-80 overflow-auto  mb-2 ">
-          <h2 className="text-text1  mt-4 ps-5 ">
+        <div className="flex-1 overflow-y-auto px-2 ">
+          <h2 className="text-text2  mt-4 ps-5 ">
             Conversación iniciada
           </h2>
           {messages.map((msg, idx) => (
@@ -94,14 +103,11 @@ export const ChatWindow = () => {
         </div>
       )}
 
-      <div className=" border-gray-200">
-        <h2 className="text-text2 mt-4 font-bold ps-5 ">
-          Escribe tu consulta:
-        </h2>
+      <div >
         <MessageInput onSend={sendMessage} />
-        <ResetButton onReset={resetChat} />
+        {/* <ResetButton onReset={resetChat} /> */}
       </div>
-      <Footer onHomeClick={handleHomeClick} onHelpClick={handleHelpClick} />
+      <Footer onHelpClick={handleHelpClick} onReset={resetChat} />
     </main>
   );
 };
